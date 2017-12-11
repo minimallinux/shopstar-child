@@ -1,0 +1,10 @@
+.category select {
+background: url(arrow.png) no-repeat 96% 0;
+   height: 30px;
+   overflow: hidden;
+   -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-indent: 0.1;
+    text-overflow: '';
+}
