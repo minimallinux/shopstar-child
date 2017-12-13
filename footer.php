@@ -28,14 +28,14 @@
     </div>
 	<div class="bottom-bar">
 	<div class="container"> 
-		   <div class="row">
-			<div class="col c6" id="navmenu">
+		   <div class="row cols-sm-12">
+			<div id="navmenu">
 <?php
  if ( has_nav_menu( 'footer' ) ) {
       wp_nav_menu( array( 'theme_location' => 'footer' ) );
  } ?>
 </div>
-<div class="col c6" id="copyright">
+<div id="copyright">
 				<?php printf( __( 'Built by %1$s', 'shopstar_child' ), '<a href="'. esc_url( '#' ) .'">Webmobapps</a> © 2017 Red Diamond' ); ?>
 			</div>
 			</div>
