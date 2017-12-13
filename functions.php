@@ -8,7 +8,64 @@ function theme_enqueue_styles() {
         array('parent-style')
     );
 }
+//Direct To Cart
+/*add_filter('woocommerce_add_to_cart_redirect', 'add_to_cart_redirect');
+function add_to_cart_redirect() {
+ global $woocommerce;
+ $checkout_url = wc_get_checkout_url();
+ return $checkout_url;
+}*/
 define('WOOCOMMERCE_USE_CSS', false);
+/*Proceeed To checkout at Top
+add_action( 'woocommerce_before_cart', 'move_proceed_button' );
+function move_proceed_button( $checkout ) {
+	echo '<a href="' . esc_url( WC()->cart->get_checkout_url() ) . '" class="checkout-button button alt wc-forward" >' . __( 'Proceed to Checkout', 'woocommerce' ) . '</a>';
+}*/
+/*function shopstar_child_after_remove_product($cart_item_key) {
+    // Your custom function
+}
+add_action( 'woocommerce_cart_item_removed', 'shopstar_child_after_remove_product' );*/
+
+
+/* Disable All WooCommerce  Styles and Scripts Except Shop Pages*/
+add_action( 'wp_enqueue_scripts', 'dequeue_woocommerce_styles_scripts', 99 );
+function dequeue_woocommerce_styles_scripts() {
+if ( function_exists( 'is_woocommerce' ) ) {
+if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
+# Styles
+wp_dequeue_style( 'woocommerce-general' );
+wp_dequeue_style( 'woocommerce-layout' );
+wp_dequeue_style( 'woocommerce-smallscreen' );
+wp_dequeue_style( 'woocommerce_frontend_styles' );
+wp_dequeue_style( 'woocommerce_fancybox_styles' );
+wp_dequeue_style( 'woocommerce_chosen_styles' );
+wp_dequeue_style( 'woocommerce_prettyPhoto_css' );
+# Scripts
+wp_dequeue_script( 'wc_price_slider' );
+wp_dequeue_script( 'wc-single-product' );
+wp_dequeue_script( 'wc-add-to-cart' );
+wp_dequeue_script( 'wc-cart-fragments' );
+wp_dequeue_script( 'wc-checkout' );
+wp_dequeue_script( 'wc-add-to-cart-variation' );
+wp_dequeue_script( 'wc-single-product' );
+wp_dequeue_script( 'wc-cart' );
+wp_dequeue_script( 'wc-chosen' );
+wp_dequeue_script( 'woocommerce' );
+wp_dequeue_script( 'prettyPhoto' );
+wp_dequeue_script( 'prettyPhoto-init' );
+wp_dequeue_script( 'jquery-blockui' );
+wp_dequeue_script( 'jquery-placeholder' );
+wp_dequeue_script( 'fancybox' );
+wp_dequeue_script( 'jqueryui' );
+}
+}
+}
+/*Redirect Continue Shooping Button*/
+/*function my_woocommerce_continue_shopping_redirect( $return_to ) {
+	return get_permalink( wc_get_page_id( 'shop' ) );
+}
+add_filter( 'woocommerce_continue_shopping_redirect', 'my_woocommerce_continue_shopping_redirect', 20 );
+
 /*
  * Define image sizes
  */
@@ -72,4 +129,60 @@ add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_
 function woo_remove_category_products_count() {
 	return;
 }
+/*Update cart and show Update Button
+add_action( 'wp_footer', 'cart_update_qty_script' );
+function cart_update_qty_script() {
+  if (is_cart()) :
+   ?>
+    <script>
+    	jQuery(window).on('load', function(){
+    		 jQuery("[name='update_cart']").removeAttr('disabled');
+    	});
+    	jQuery( document.body ).on( 'updated_cart_totals', function(){
+             jQuery("[name='update_cart']").removeAttr('disabled');
+		});
+		jQuery('div.woocommerce').on('change', '.qty', function(){
+           jQuery("[name='update_cart']").trigger("click"); 
+        });
+   </script>
+<?php
+endif;
+}
+/*Update cart and hide Update Button*/
+add_action( 'wp_footer', 'cart_update_qty_script' );
+function cart_update_qty_script() {
+  if (is_cart()) :
+   ?>
+    <script>
+    	jQuery(window).on('load', function(){
+    		 jQuery("[name='update_cart']").closest( 'form' ).find( 'input[name=\"update_cart\"]' ).hide();
+    	});
+    	jQuery( document.body ).on( 'updated_cart_totals', function(){
+             jQuery("[name='update_cart']").closest( 'form' ).find( 'input[name=\"update_cart\"]' ).hide();
+		});
+		jQuery('div.woocommerce').on('change', '.qty', function(){
+           jQuery("[name='update_cart']").trigger("click"); 
+        });
+   </script>
+<?php
+endif;
+}
+/*Redirect To Checkout using cart and checkout on checkout page*/
+add_filter('add_to_cart_redirect', 'shopstar_child_add_to_cart_redirect');
+function shopstar_child_add_to_cart_redirect() {
+ global $woocommerce;
+ $checkout_url = $woocommerce->cart->get_checkout_url();
+ return $checkout_url;
+}
+// Check for empty-cart get param to clear the cart
+add_action('init', 'woocommerce_clear_cart_url');
+function woocommerce_clear_cart_url() {
+    global $woocommerce;
+    if( isset($_REQUEST['clear-cart']) ) {
+        $woocommerce->cart->empty_cart();
+    }
+}
+
+
+
 ?>
