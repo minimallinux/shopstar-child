@@ -8,13 +8,6 @@ function theme_enqueue_styles() {
         array('parent-style')
     );
 }
-//Direct To Cart
-/*add_filter('woocommerce_add_to_cart_redirect', 'add_to_cart_redirect');
-function add_to_cart_redirect() {
- global $woocommerce;
- $checkout_url = wc_get_checkout_url();
- return $checkout_url;
-}*/
 define('WOOCOMMERCE_USE_CSS', false);
 /*Proceeed To checkout at Top
 add_action( 'woocommerce_before_cart', 'move_proceed_button' );
@@ -129,7 +122,7 @@ add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_
 function woo_remove_category_products_count() {
 	return;
 }
-/*Update cart and show Update Button
+/*Auto Update cart and show Update Button
 add_action( 'wp_footer', 'cart_update_qty_script' );
 function cart_update_qty_script() {
   if (is_cart()) :
@@ -148,7 +141,7 @@ function cart_update_qty_script() {
 <?php
 endif;
 }
-/*Update cart and hide Update Button*/
+/*Auto Update cart and hide Update Button*/
 add_action( 'wp_footer', 'cart_update_qty_script' );
 function cart_update_qty_script() {
   if (is_cart()) :
@@ -167,8 +160,20 @@ function cart_update_qty_script() {
 <?php
 endif;
 }
-/*Redirect To Checkout using cart and checkout on checkout page*/
-add_filter('add_to_cart_redirect', 'shopstar_child_add_to_cart_redirect');
+/*Direct To Cart
+add_filter('woocommerce_add_to_cart_redirect', 'add_to_cart_redirect');
+function add_to_cart_redirect() {
+ global $woocommerce;
+ $checkout_url = wc_get_checkout_url();
+ return $checkout_url;
+}*/
+/*Remove Breadcrumbs*/
+add_action( 'init', 'shopstar_child_remove_wc_breadcrumbs' );
+function shopstar_child_remove_wc_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}
+/*Direct To Checkout using cart and checkout on checkout page*/
+add_filter('woocommerce_add_to_cart_redirect', 'shopstar_child_add_to_cart_redirect');
 function shopstar_child_add_to_cart_redirect() {
  global $woocommerce;
  $checkout_url = $woocommerce->cart->get_checkout_url();
@@ -182,7 +187,28 @@ function woocommerce_clear_cart_url() {
         $woocommerce->cart->empty_cart();
     }
 }
-
-
-
-?>
+/*Remove Choose Option Text on Variations Dropdaown*/
+add_filter( 'woocommerce_dropdown_variation_attribute_options_args', 'shopstar_child_remove_select_text');
+function shopstar_child_remove_select_text( $args ){ $args['show_option_none'] = '';
+return $args; }
+// Main Price Setting
+function shopstar_child_variable_price_format( $price, $product ) {
+    $prefix = sprintf('%s: ', __('From', 'shopstar_child'));
+ 
+    $min_price_regular = $product->get_variation_regular_price( 'min', true );
+    $min_price_sale    = $product->get_variation_sale_price( 'min', true );
+    $max_price = $product->get_variation_price( 'max', true );
+    $min_price = $product->get_variation_price( 'min', true );
+ 
+    $price = ( $min_price_sale == $min_price_regular ) ?
+        wc_price( $min_price_regular ) :
+        '<del>' . wc_price( $min_price_regular ) . '</del>' . '<ins>' . wc_price( $min_price_sale ) . '</ins>';
+ 
+    return ( $min_price == $max_price ) ?
+        $price :
+        sprintf('%s%s', $prefix, $price);
+}
+add_filter( 'woocommerce_variable_sale_price_html', 'shopstar_child_variable_price_format', 10, 2 );
+add_filter( 'woocommerce_variable_price_html', 'shopstar_child_variable_price_format', 10, 2 );
+/*Remove Default Sorting Dropdown*/
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
