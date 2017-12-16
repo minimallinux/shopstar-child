@@ -6,9 +6,9 @@ Author URL:     https://webmobapps.com
 Template:       shopstar
 Version:       1.0.0
 */
-/*Sidebar Widgets
+/*Sidebar Widgets*/
 
-.category select{
+.widget_product_categories select{
 color: inherit;
 font: inherit;
 font-size: 0.8rem;

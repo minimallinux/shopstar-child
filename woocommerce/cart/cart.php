@@ -15,14 +15,23 @@
  * @package WooCommerce/Templates
  * @version 3.1.0
  */
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 wc_print_notices();
-
-do_action( 'woocommerce_before_cart' ); ?>
+ do_action( 'woocommerce_before_cart' ); ?>
+  <script>
+    	   jQuery(window).on('load', function(){
+    	     jQuery("[name='update_cart']").closest( 'form' ).find( 'input[name=\"update_cart\"]' ).hide();
+    	          });
+    	         jQuery( document.body ).on( 'updated_cart_totals', function(){
+              jQuery("[name='update_cart']").closest( 'form' ).find( 'input[name=\"update_cart\"]' ).hide();
+		        });
+		          jQuery('div.woocommerce').on('change', '.qty', function(){
+               jQuery("[name='update_cart']").trigger("click"); 
+        });
+   </script>
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 	   <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
@@ -146,9 +155,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 		</tbody>
 	</table>
 	<?php do_action( 'woocommerce_after_cart_table' ); ?>
-	<div class="emptycart">
-	<input type="submit" id="empty" onclick='javascript:if(!confirm("Clear All Items?")) {return false;}' class="button" name="clear-cart" value="<?php _e('Clear Cart', 'woocommerce'); ?>" />
-	</div>
 </form>
 	
 <p class="return-to-shop">

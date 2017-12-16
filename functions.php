@@ -141,7 +141,7 @@ function cart_update_qty_script() {
 <?php
 endif;
 }
-/*Auto Update cart and hide Update Button*/
+/*Auto Update cart and hide Update Button
 add_action( 'wp_footer', 'cart_update_qty_script' );
 function cart_update_qty_script() {
   if (is_cart()) :
