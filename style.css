@@ -80,7 +80,11 @@ padding: 5px;
 background-color: #fff;
 }*/
 /*Footer*/
-.site-footer {
+.site-footer #copyright a:hover {
+text-decoration:none!important;
+border-bottom:none!important;
+}
+#colophon #copyright a:hover {
 text-decoration:none!important;
 border-bottom:none!important;
 }
@@ -96,12 +100,12 @@ padding-top:4px;
 float:right;
 font: inherit;
 color: #c0c0c0;
-font-size: 0.7rem;
+font-size: 0.8rem;
 font-weight: 300;
 text-align:center;
 }
 /*Left Side*/
-#navmenu {font: inherit;padding-bottom:5px;font-size: 0.8rem;float:left;}
+#navmenu {font: inherit;padding-bottom:5px;font-size: 0.9rem;float:left;}
 #navmenu a {color:#c0c0c0;}
 #navmenu a:hover{color: #808080;text-decoration: none!important;}
 #navmenu {text-align:center;}

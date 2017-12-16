@@ -15,9 +15,11 @@ global $woocommerce;
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script>
+	jQuery(document).ready(function($)) {
     $(document).on("click",".bw-quantity", function (e) {
         $('input[name="update_cart"]' ).removeProp( 'disabled');
     });
+});
 </script>
 
 <?php wp_head(); ?>

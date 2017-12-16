@@ -147,14 +147,14 @@ function cart_update_qty_script() {
   if (is_cart()) :
    ?>
     <script>
-    	jQuery(window).on('load', function(){
-    		 jQuery("[name='update_cart']").closest( 'form' ).find( 'input[name=\"update_cart\"]' ).hide();
-    	});
-    	jQuery( document.body ).on( 'updated_cart_totals', function(){
-             jQuery("[name='update_cart']").closest( 'form' ).find( 'input[name=\"update_cart\"]' ).hide();
-		});
-		jQuery('div.woocommerce').on('change', '.qty', function(){
-           jQuery("[name='update_cart']").trigger("click"); 
+    	   jQuery(window).on('load', function(){
+    	     jQuery("[name='update_cart']").closest( 'form' ).find( 'input[name=\"update_cart\"]' ).hide();
+    	          });
+    	         jQuery( document.body ).on( 'updated_cart_totals', function(){
+              jQuery("[name='update_cart']").closest( 'form' ).find( 'input[name=\"update_cart\"]' ).hide();
+		        });
+		          jQuery('div.woocommerce').on('change', '.qty', function(){
+               jQuery("[name='update_cart']").trigger("click"); 
         });
    </script>
 <?php
