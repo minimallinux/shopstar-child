@@ -14,14 +14,6 @@ global $woocommerce;
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script>
-	jQuery(document).ready(function($)) {
-    $(document).on("click",".bw-quantity", function (e) {
-        $('input[name="update_cart"]' ).removeProp( 'disabled');
-    });
-});
-</script>
-
 <?php wp_head(); ?>
 </head>
 
@@ -50,3 +42,4 @@ global $woocommerce;
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="padder">
+

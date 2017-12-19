@@ -9,6 +9,7 @@ function theme_enqueue_styles() {
     );
 }
 define('WOOCOMMERCE_USE_CSS', false);
+define( 'WC_MAX_LINKED_VARIATIONS', 99 );
 /*Proceeed To checkout at Top
 add_action( 'woocommerce_before_cart', 'move_proceed_button' );
 function move_proceed_button( $checkout ) {
@@ -112,8 +113,8 @@ add_action( 'init', 'register_menu' );
 }
 add_action('widgets_init', 'unregister_default_widgets', 11);
 /*Remove Additonal information Tab*/
-add_filter( 'woocommerce_product_tabs', 'bbloomer_remove_product_tabs', 98 );
- function bbloomer_remove_product_tabs( $tabs ) {
+add_filter( 'woocommerce_product_tabs', 'shopstar_child_remove_product_tabs', 98 );
+ function shopstar_child_remove_product_tabs( $tabs ) {
     unset( $tabs['additional_information'] ); 
     return $tabs;
 } 
@@ -141,7 +142,7 @@ function cart_update_qty_script() {
 <?php
 endif;
 }
-/*Auto Update cart and hide Update Button
+/*Auto Update cart and hide Update Button - script now on cart page
 add_action( 'wp_footer', 'cart_update_qty_script' );
 function cart_update_qty_script() {
   if (is_cart()) :
@@ -167,11 +168,23 @@ function add_to_cart_redirect() {
  $checkout_url = wc_get_checkout_url();
  return $checkout_url;
 }*/
-/*Remove Breadcrumbs*/
+/*Remove Breadcrumbs
 add_action( 'init', 'shopstar_child_remove_wc_breadcrumbs' );
 function shopstar_child_remove_wc_breadcrumbs() {
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}*/
+/*Change Breadcrumb values*/
+function woocommerce_breadcrumbs() {
+    return array(
+            'delimiter'   => ' > ',
+            'wrap_before' => '<nav class="woocommerce-breadcrumb" itemprop="breadcrumb">',
+            'wrap_after'  => '</nav>',
+            'before'      => '',
+            'after'       => '',
+            'home'        => _x( 'Shop', 'breadcrumb', 'woocommerce' ),
+        );
 }
+add_filter( 'woocommerce_breadcrumb_defaults', 'woocommerce_breadcrumbs' );
 /*Direct To Checkout using cart and checkout on checkout page*/
 add_filter('woocommerce_add_to_cart_redirect', 'shopstar_child_add_to_cart_redirect');
 function shopstar_child_add_to_cart_redirect() {
@@ -179,14 +192,14 @@ function shopstar_child_add_to_cart_redirect() {
  $checkout_url = $woocommerce->cart->get_checkout_url();
  return $checkout_url;
 }
-// Check for empty-cart get param to clear the cart
+/*Check for empty-cart get param to clear the cart
 add_action('init', 'woocommerce_clear_cart_url');
 function woocommerce_clear_cart_url() {
     global $woocommerce;
     if( isset($_REQUEST['clear-cart']) ) {
         $woocommerce->cart->empty_cart();
     }
-}
+}*/
 /*Remove Choose Option Text on Variations Dropdaown*/
 add_filter( 'woocommerce_dropdown_variation_attribute_options_args', 'shopstar_child_remove_select_text');
 function shopstar_child_remove_select_text( $args ){ $args['show_option_none'] = '';
