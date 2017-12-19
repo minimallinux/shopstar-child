@@ -204,7 +204,7 @@ function woocommerce_clear_cart_url() {
 add_filter( 'woocommerce_dropdown_variation_attribute_options_args', 'shopstar_child_remove_select_text');
 function shopstar_child_remove_select_text( $args ){ $args['show_option_none'] = '';
 return $args; }
-// Main Price Setting
+// Main Price Setting changed to "From" and remove higher price
 function shopstar_child_variable_price_format( $price, $product ) {
     $prefix = sprintf('%s: ', __('From', 'shopstar_child'));
  
