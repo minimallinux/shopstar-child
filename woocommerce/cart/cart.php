@@ -20,6 +20,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 wc_print_notices();
 do_action( 'woocommerce_before_cart' ); ?>
+<div class="shopsearch">
+<?php echo do_shortcode("[aws_search_form]");?><!--AWS Search Plugin Shortcode-->
+</div>
+<!--Auto Update Cart and Hide Update Cart Button-->
 <script>
     	   jQuery(window).on('load', function(){
     	     jQuery("[name='update_cart']").closest( 'form' ).find( 'input[name=\"update_cart\"]' ).hide();
@@ -35,7 +39,7 @@ do_action( 'woocommerce_before_cart' ); ?>
    	<h3>Your Basket.</h3>
 <h4>If you do not receive a confirmation email within 15 minutes after placing your order, please call us on  <a href="tel:+441302368585">01302 368585</a> or <a href="tel:+447868744127">07868 744127</a> 
 or use our <a href="http://vhost2.com/?page_id=422&v=79cba1185463">contact form.</a></h4>
-<h4>The items below are currently in your basket. To remove any item click the red "X". To place an order, please click "Place Order" below. Please note that Delivery method is ignored if you are ordering Gift Certificates or Electronically distributed products.</h4>
+<h4>The items below are currently in your basket. To remove any item click the red "X". You can also just type a short term in the search box above to find individual items. To place an order, please click "Place Order" below.</h4><h4> Please note that delivery method is ignored if you are ordering Gift Certificates or Electronically distributed products.</h4>
 </div>
  <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
@@ -150,8 +154,7 @@ or use our <a href="http://vhost2.com/?page_id=422&v=79cba1185463">contact form.
 						</div>
 					<?php } ?>
 			        <input type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>" />
-
-					<?php do_action( 'woocommerce_cart_actions' ); ?>
+                    <?php do_action( 'woocommerce_cart_actions' ); ?>
 
 					<?php wp_nonce_field( 'woocommerce-cart' ); ?>
 				</td>
@@ -160,15 +163,17 @@ or use our <a href="http://vhost2.com/?page_id=422&v=79cba1185463">contact form.
 		</tbody>
 	</table>
 	<?php do_action( 'woocommerce_after_cart_table' ); ?>
+	<div class="emptycart">
+	  <input type="submit" id="empty" onclick='javascript:if(!confirm("Clear All Items?")) {return false;}' class="button" name="clear-cart" value="<?php _e('Clear Cart', 'woocommerce'); ?>" />
+	</div>
+	<div class="return-to-shop">
+	<a class="button wc-forward" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
+			<?php _e( 'Back To Shop', 'woocommerce' ) ?>
+		</a>
+		<h2>Place Order Below</h2>
+	</div>
 </form>
-<p class="return-to-shop">
-					<a class="button wc-backward" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-			<?php _e( 'Continue Shopping', 'woocommerce' ) ?>
-		</a></p>
-		<h1 style="text-align:center;">Place Order</h1>
-
-<div class="cart-collaterals">
-	<?php
+<?php
 		/**
 		 * woocommerce_cart_collaterals hook.
 		 *
