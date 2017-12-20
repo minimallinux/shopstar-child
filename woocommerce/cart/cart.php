@@ -161,11 +161,12 @@ or use our <a href="http://vhost2.com/?page_id=422&v=79cba1185463">contact form.
 	</table>
 	<?php do_action( 'woocommerce_after_cart_table' ); ?>
 </form>
-	
 <p class="return-to-shop">
 					<a class="button wc-backward" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
 			<?php _e( 'Continue Shopping', 'woocommerce' ) ?>
 		</a></p>
+		<h1 style="text-align:center;">Place Order</h1>
+
 <div class="cart-collaterals">
 	<?php
 		/**
