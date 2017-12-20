@@ -19,8 +19,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 wc_print_notices();
- do_action( 'woocommerce_before_cart' ); ?>
-  <script>
+do_action( 'woocommerce_before_cart' ); ?>
+<script>
     	   jQuery(window).on('load', function(){
     	     jQuery("[name='update_cart']").closest( 'form' ).find( 'input[name=\"update_cart\"]' ).hide();
     	          });
