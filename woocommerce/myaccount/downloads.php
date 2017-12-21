@@ -38,9 +38,11 @@ do_action( 'woocommerce_before_account_downloads', $has_downloads ); ?>
 <?php else : ?>
 	<div class="woocommerce-Message woocommerce-Message--info woocommerce-info">
 		<a class="woocommerce-Button button" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-			<?php esc_html_e( 'Go shop', 'woocommerce' ) ?>
+			<?php esc_html_e( 'Go to shop', 'woocommerce' ) ?>
 		</a>
-		<?php esc_html_e( ' No downloads available yet.', 'woocommerce' ); ?>
+		</div>
+		<div style="text-align:center;padding-left:10px;"">
+		<h4><?php esc_html_e( 'No downloads available yet.', 'woocommerce' ); ?></h4>
 	</div>
 <?php endif; ?>
 

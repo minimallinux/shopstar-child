@@ -86,14 +86,87 @@ text-align: center;
 .wpcf7 input[type="submit"]{ 
 padding: 5px;
 width: 130px;
- -khtml-border-radius: 10px!important;
-  -webkit-border-radius: 10px!important; 
-  -moz-border-radius: 10px!important; 
-  border-radius: 10px!important; 
+ background: -moz-linear-gradient(
+        top,
+        #a3a3a3 0%,
+        #3b3b3b 50%,
+        #242424 50%,
+        #000000);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#a3a3a3),
+        color-stop(0.50, #3b3b3b),
+        color-stop(0.50, #242424),
+        to(#000000));
+     -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    border-radius: 10px!important;
+   -khtml-border-radius: 10px!important;
+   border: 1px solid #000000;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.6);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.6);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.6);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,1),
+        0px 1px 0px rgba(255,255,255,0.2);
+color: #fff!important;
+}
+.wpcf7 input[type="submit"]:hover{ 
+padding: 5px;
+width: 130px;
+background: -moz-linear-gradient(
+        top,
+        #ffffff 0%,
+        #ebebeb 50%,
+        #dbdbdb 50%,
+        #b5b5b5);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#ffffff),
+        color-stop(0.50, #ebebeb),
+        color-stop(0.50, #dbdbdb),
+        to(#b5b5b5));
+ border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
+    -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    border-radius: 10px!important;
+   -khtml-border-radius: 10px!important;
+    color:#050505!important;   
+
+
 }
 .wpcf7 input[type="text"]{ 
 margin-top:5px;
 width: 100%;
+ border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
+   -webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+    -khtml-border-radius: 5px!important;
+    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
 -khtml-border-radius: 5px!important;
   -webkit-border-radius: 5px!important; 
   -moz-border-radius: 5px!important; 
@@ -102,6 +175,17 @@ width: 100%;
 .wpcf7 input[type="tel"]{ 
 margin-top:5px;
 width: 100%;
+border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
+   -webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+    -khtml-border-radius: 5px!important;
+    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
 -khtml-border-radius: 5px!important;
   -webkit-border-radius: 5px!important; 
   -moz-border-radius: 5px!important; 
@@ -110,26 +194,47 @@ width: 100%;
 .wpcf7 input[type="email"]{ 
 margin-top:5px;
 width: 100%;
--khtml-border-radius: 5px!important;
-  -webkit-border-radius: 5px!important; 
-  -moz-border-radius: 5px!important; 
-  border-radius: 5px!important; 
+border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
+   -webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+    -khtml-border-radius: 5px!important;
+    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
 }
 .textarea { 
 margin-top:5px;
 width: 100%;
--khtml-border-radius: 5px!important;
-  -webkit-border-radius: 5px!important; 
-  -moz-border-radius: 5px!important; 
-  border-radius: 5px!important; 
+border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
+   -webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+    -khtml-border-radius: 5px!important;
+    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
 }
 .select { 
 padding: 5px;
 background-color: #fff;
--khtml-border-radius: 5px!important;
-  -webkit-border-radius: 5px!important; 
-  -moz-border-radius: 5px!important; 
-  border-radius: 5px!important; 
+border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
+   -webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+    -khtml-border-radius: 5px!important;
+    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
 }
 /*Footer*/
 .site-footer #copyright a:hover {
@@ -177,28 +282,52 @@ text-align:center;
 /*.woocommerce-Price-amount {display:none !important;}*/
 /*Image Borders*/
 .woocommerce-LoopProduct-link img {
-border:2px solid rgba(18,30,51, 0.1);
-    -moz-border-radius: 10px!important;
-    -webkit-border-radius: 10px!important;
-    -khtml-border-radius: 10px!important;
-    border-radius: 10px!important;
+    background-color: #fff;
+    border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
     padding-top: 20px;
     padding-bottom:20px;
-    width: 100%!important;
-    height:100%!important;
-    margin: 0;
+   -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    border-radius: 10px!important;
+   -khtml-border-radius: 10px!important;
+    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
+    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
+    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
+    margin: auto;
+    margin-bottom:20px;
+    overflow: hidden;
+    width: 100%;
+    height:100%;
 }
 .product-category img {
-border:2px solid rgba(18,30,51, 0.1);
-    -moz-border-radius: 10px!important;
-    -webkit-border-radius: 10px!important;
-    -khtml-border-radius: 10px!important;
-    border-radius: 10px!important;
+    background-color: #fff;
+    border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
     padding-top: 20px;
     padding-bottom:20px;
-    width: 100%!important;
-    height:100%!important;
-    margin: 0;
+   -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    border-radius: 10px!important;
+   -khtml-border-radius: 10px!important;
+    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
+    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
+    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
+    margin: auto;
+    margin-bottom:20px;
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+}
+.woocommerce-product-gallery img {
+    border:none!important;
+    padding-bottom:10px;
+    width: 100%;
+    height:100%;
 }
 /*Category Page Titles*/
 .term-description h4,
@@ -218,10 +347,78 @@ padding:5px!important;
 .woocommerce-page input.button, 
 .woocommerce-page #respond input#submit, 
 .woocommerce-page #content input.button {
-  -khtml-border-radius: 10px!important;
-  -webkit-border-radius: 10px!important; 
-  -moz-border-radius: 10px!important; 
-  border-radius: 10px!important; 
+   background: -moz-linear-gradient(
+        top,
+        #a3a3a3 0%,
+        #3b3b3b 50%,
+        #242424 50%,
+        #000000);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#a3a3a3),
+        color-stop(0.50, #3b3b3b),
+        color-stop(0.50, #242424),
+        to(#000000));
+     -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    border-radius: 10px!important;
+   -khtml-border-radius: 10px!important;
+   border: 1px solid #000000;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.6);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.6);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.6);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,1),
+        0px 1px 0px rgba(255,255,255,0.2);
+color: #fff!important;
+}
+.woocommerce a.button:hover,
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover, 
+.woocommerce #respond input#submit:hover, 
+.woocommerce #content input.button,:hover 
+.woocommerce-page a.button:hover, 
+.woocommerce-page button.button:hover, 
+.woocommerce-page input.button:hover, 
+.woocommerce-page #respond input#submit:hover, 
+.woocommerce-page #content input.button:hover {
+ background: -moz-linear-gradient(
+        top,
+        #ffffff 0%,
+        #ebebeb 50%,
+        #dbdbdb 50%,
+        #b5b5b5);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#ffffff),
+        color-stop(0.50, #ebebeb),
+        color-stop(0.50, #dbdbdb),
+        to(#b5b5b5));
+ border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
+    -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    border-radius: 10px!important;
+   -khtml-border-radius: 10px!important;
+    color:#050505!important;   
+
 }
 /*Hide Clear Text on variation dropdown*/
 .reset_variations {
@@ -243,63 +440,147 @@ border: none!important;
 color:#fff!important;
 }
 /*Cart - Checkout - Order - Cart Empty Page*/
-/*Empty Cart Button*/
-.emptycart {
-text-align:center;
-margin:auto!important;
-padding:10px;
-}
 /*Search Box Sidebar Widget*/
-.widget_aws_widget .aws-container .aws-search-field {
-margin-top:none;
- margin-bottom:20px;
- margin-left:auto; 
- margin-right:auto;
- text-align:left;
- width:100%;
+  .widget_aws_widget .aws-container .aws-search-field {
+    border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
+   -webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+    -khtml-border-radius: 5px!important;
+    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -webkit-transition: background .55s ease;
+-moz-transition: background .55s ease;
+-ms-transition: background .55s ease;
+-o-transition: background .55s ease;
+transition: background .55s ease;
+    margin: auto;
+    margin-bottom:20px;
+    overflow: hidden;
+    width: 100%;
 }
 .widget_aws_widget .aws-container .aws-search-field::placeholder {
 font:inherit;
 font-size:1.5em!important;
 font-weight:300;
-color:#808080!important;
+color:#000!important;
+}
+.widget_aws_widget .aws-container .aws-search-field:hover,
+.widget_aws_widget .aws-container .aws-search-field:focus,
+.widget_aws_widget .aws-container .aws-search-field:active {
+outline:none!important;
+background: #B0BEC5!important;
+color:#fff!important;
 }
 /*Search Box on Cart Page*/
 .woocommerce .shopsearch .aws-container .aws-search-field {
- margin-top:none;
- margin-bottom:none;
- margin-left:auto; 
- margin-right:auto;
- text-align:center;
- width:100%;
+    border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
+   -webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+    -khtml-border-radius: 5px!important;
+    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    -webkit-transition: background .55s ease;
+-moz-transition: background .55s ease;
+-ms-transition: background .55s ease;
+-o-transition: background .55s ease;
+transition: background .55s ease;
+    margin: auto;
+    margin-bottom:20px;
+    overflow: hidden;
+    padding: 8px;
+    width: 100%;
+}
+.woocommerce .shopsearch .aws-container .aws-search-field:hover,
+.woocommerce .shopsearch .aws-container .aws-search-field:focus,
+.woocommerce .shopsearch .aws-container .aws-search-field:active {
+outline:none!important;
+background: #B0BEC5!important;
+color:#fff!important;
 }
 /*Search Box Text Placeholder Cart Page*/
 .woocommerce .shopsearch .aws-container .aws-search-field::placeholder {
 font:inherit;
 font-size:1.5em!important;
 font-weight:300;
-color:#808080!important;
+color:#000!important;
+}
+.return-to-shop a.button.wc-forward {
+background: -moz-linear-gradient(
+        top,
+        #a3a3a3 0%,
+        #3b3b3b 50%,
+        #242424 50%,
+        #000000);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#a3a3a3),
+        color-stop(0.50, #3b3b3b),
+        color-stop(0.50, #242424),
+        to(#000000));
+     -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    border-radius: 10px!important;
+   -khtml-border-radius: 10px!important;
+   border: 1px solid #000000;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.6);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.6);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.6);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,1),
+        0px 1px 0px rgba(255,255,255,0.2);
+color: #fff!important;
+    margin: auto;
+  
+  
 }
 /*Return Shopping Button*/
-.return-to-shop a.button.wc-forward {
-background:#fff!important;
-border: solid 1px #000;
-color:#000;
-margin:auto!important;
-text-align:center;
-}
 .return-to-shop a.button.wc-forward:hover {
-background:rgba(18,30,51, 0.6)!important;
-border: none!important;
-}
-/*Place order text*/
-.woocommerce .return-to-shop h2 {
-text-align:center;
-width:200px!important;
-margin-top:5px;
-margin-bottom:0px;
-margin-left:auto;
-margin-right:auto;
+background: -moz-linear-gradient(
+        top,
+        #ffffff 0%,
+        #ebebeb 50%,
+        #dbdbdb 50%,
+        #b5b5b5);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#ffffff),
+        color-stop(0.50, #ebebeb),
+        color-stop(0.50, #dbdbdb),
+        to(#b5b5b5));
+ border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
+    -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    border-radius: 10px!important;
+   -khtml-border-radius: 10px!important;
+    color:#050505!important;   
 }
 /*Hide Cart Notice On Checkout*/
 .woocommerce-checkout .woocommerce-message {display: none !important;}
