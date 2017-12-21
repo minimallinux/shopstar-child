@@ -443,7 +443,9 @@ border: none!important;
 color:#fff!important;
 }
 /*AWS Search Box Global Base Style*/
-.aws-search-field {
+.aws-container .aws-search-form .aws-search-field {
+}
+.aws-container .aws-search-form .aws-search-field {
 background:rgba(255,255,255, 0.3)!important;
 margin-bottom:36px!important;
 border: 1px solid #949494;
