@@ -269,8 +269,9 @@ text-align:center;
 }*/
 /*Top of all pages breadcrumb*/
 .woocommerce-breadcrumb {
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: none!important;
+    margin:none!important;
+    font-size: 1em!important;
  }
 .woocommerce-breadcrumb a {
      color:#000 !important;
@@ -331,11 +332,15 @@ text-align:center;
     height:100%;
 }
 /*Category Page Titles and descriptions*/
+.woocommerce-result-count {
+margin-bottom:8px!important; 
+}
 .term-description h4,
 .term-description h3 ,
 .term-description h2 {
 text-align:center!important;
-padding:5px!important;
+padding:none!important;
+margin:none!important;
 }
 /********************END SHOP PAGE LAYOUT *************************************/
 /*Buttons*/
@@ -440,11 +445,9 @@ color:#fff!important;
 /*Cart - Checkout - Order - Cart Empty Page*/
 /*AWS Search Box Global*/
 .aws-search-field {
-background:rgba(77, 124, 137, 0.07)!important;
-}
-/*Search Box Sidebar Widget*/
-  .widget_aws_widget .aws-container .aws-search-field {
-   border: 1px solid #949494;
+background:rgba(255,255,255, 0.3)!important;
+margin-bottom:36px!important;
+border: 1px solid #949494;
     -moz-box-shadow:
         0px 1px 3px rgba(000,000,000,0.5),
         inset 0px 0px 2px rgba(255,255,255,1);
@@ -457,79 +460,29 @@ background:rgba(77, 124, 137, 0.07)!important;
     text-shadow:
         0px -1px 0px rgba(000,000,000,0.2),
         0px 1px 0px rgba(255,255,255,1);
-    -webkit-border-radius: 4px!important;
-    -moz-border-radius: 4px!important;
-    border-radius: 4px!important;
-   -khtml-border-radius: px!important;  
-    -webkit-transition: background .55s ease;
+   -webkit-transition: background .55s ease;
 -moz-transition: background .55s ease;
 -ms-transition: background .55s ease;
 -o-transition: background .55s ease;
 transition: background .55s ease;
-    margin: auto;
+    overflow: hidden;
+    width: 100%;
     overflow: hidden;
     width: 100%;
 }
-/*
-.widget_aws_widget .aws-container .aws-search-field::placeholder {
-font:inherit;
-font-size:1.5em!important;
-font-weight:300;
-color:#000!important;
+/*AWS Search Box Fade and Border Radius*/
+.aws-container .aws-search-form .aws-search-field {
+-webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+   -khtml-border-radius: 5px!important;  
 }
-.widget_aws_widget .aws-container .aws-search-field:hover,
-.widget_aws_widget .aws-container .aws-search-field:focus,
-.widget_aws_widget .aws-container .aws-search-field:active {
+.aws-container .aws-search-form .aws-search-field:hover,
+.aws-container .aws-search-form .aws-search-field:focus,
+.aws-container .aws-search-form .aws-search-field:active {
 outline:none!important;
-background: #B0BEC5!important;
-color:#fff!important;
+background: rgba(138, 172, 172, 0.2)!important;
 }
-/*Search Box on Cart Page*/
-.woocommerce .shopsearch .aws-container .aws-search-field {
-   border: 1px solid #949494;
-    -moz-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    -webkit-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    text-shadow:
-        0px -1px 0px rgba(000,000,000,0.2),
-        0px 1px 0px rgba(255,255,255,1);
-    -webkit-border-radius: 4px!important;
-    -moz-border-radius: 4px!important;
-    border-radius: 4px!important;
-   -khtml-border-radius: px!important;  
-    -webkit-transition: background .55s ease;
--moz-transition: background .55s ease;
--ms-transition: background .55s ease;
--o-transition: background .55s ease;
-transition: background .55s ease;
-    margin: auto;
-    overflow: hidden;
-    width: 100%;
-    margin-bottom:20px;
-    overflow: hidden;
-    padding: 8px;
-    width: 100%;
-}*/
-.woocommerce .shopsearch .aws-container .aws-search-field:hover,
-.woocommerce .shopsearch .aws-container .aws-search-field:focus,
-.woocommerce .shopsearch .aws-container .aws-search-field:active {
-outline:none!important;
-background: #B0BEC5!important;
-color:#fff!important;
-}
-/*Search Box Text Placeholder Cart Page
-.woocommerce .shopsearch .aws-container .aws-search-field::placeholder {
-font:inherit;
-font-size:1.5em!important;
-font-weight:300;
-color:#000!important;
-}*/
 .return-to-shop a.button.wc-forward {
 background: -moz-linear-gradient(
         top,
