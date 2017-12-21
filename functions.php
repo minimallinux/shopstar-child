@@ -19,7 +19,12 @@ function move_proceed_button( $checkout ) {
     // Your custom function
 }
 add_action( 'woocommerce_cart_item_removed', 'shopstar_child_after_remove_product' );*/
-
+/*Add inline script
+function add_inline_script() {
+  echo "<script></script>\n";
+}
+add_action( 'wp_head', 'add_inline_script', 0 );*/
+/*Change Page Titles*/
 
 /* Disable All WooCommerce  Styles and Scripts Except Shop Pages*/
 add_action( 'wp_enqueue_scripts', 'dequeue_woocommerce_styles_scripts', 99 );

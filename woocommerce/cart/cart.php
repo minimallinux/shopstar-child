@@ -20,9 +20,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 wc_print_notices();
 do_action( 'woocommerce_before_cart' ); ?>
-<div class="shopsearch">
-<?php echo do_shortcode("[aws_search_form]");?><!--AWS Search Plugin Shortcode-->
-</div>
 <!--Auto Update Cart and Hide Update Cart Button-->
 <script>
     	   jQuery(window).on('load', function(){
@@ -36,10 +33,10 @@ do_action( 'woocommerce_before_cart' ); ?>
         });
    </script>
    <div id="cart">
-   	<h3>Your Basket.</h3>
+   	<h1>Your Basket.</h1>
 <h4>If you do not receive a confirmation email within 15 minutes after placing your order, please call us on  <a href="tel:+441302368585">01302 368585</a> or <a href="tel:+447868744127">07868 744127</a> 
 or use our <a href="http://vhost2.com/?page_id=422&v=79cba1185463">contact form.</a></h4>
-<h4>The items below are currently in your basket. To remove any item click the red "X". You can also just type a short term in the search box above to find individual items. To place an order, please click "Place Order" at the bottom of page.</h4><h4> Please note that delivery method is ignored if you are ordering Gift Certificates or Electronically distributed products.</h4>
+<h4>Welcome To Our Rapid Checkout!. The items below are currently in your basket. To remove any item click the red "X". You can also just type a short term in the search box above to find individual items. To place an order, please click "Place Order" at the bottom of page.</h4><h4> Please note that delivery method is ignored if you are ordering Gift Certificates or Electronically distributed products.</h4>
 </div>
  <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>

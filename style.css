@@ -72,6 +72,7 @@ text-align:justify;
 #cart h4 a:hover{
 color:#808080;
 }
+#cart h2,
 #cart h3, 
 #cart h4,
 #cart p {
@@ -282,16 +283,16 @@ text-align:center;
 /*.woocommerce-Price-amount {display:none !important;}*/
 /*Image Borders*/
 .woocommerce-LoopProduct-link img {
-    background-color: #fff;
+    background-color: #fff!important;
     border-color: #dedede #bababa #aaa #bababa;
     border-style: solid;
     border-width: 1px;
     padding-top: 20px;
     padding-bottom:20px;
-   -webkit-border-radius: 10px!important;
-    -moz-border-radius: 10px!important;
-    border-radius: 10px!important;
-   -khtml-border-radius: 10px!important;
+   -webkit-border-radius: 15px!important;
+    -moz-border-radius: 15px!important;
+    border-radius: 15px!important;
+   -khtml-border-radius: 15px!important;
     -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
     -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
     box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
@@ -303,16 +304,16 @@ text-align:center;
     height:100%;
 }
 .product-category img {
-    background-color: #fff;
+    background-color: #fff!important;
     border-color: #dedede #bababa #aaa #bababa;
     border-style: solid;
     border-width: 1px;
     padding-top: 20px;
     padding-bottom:20px;
-   -webkit-border-radius: 10px!important;
-    -moz-border-radius: 10px!important;
-    border-radius: 10px!important;
-   -khtml-border-radius: 10px!important;
+   -webkit-border-radius: 15px!important;
+    -moz-border-radius: 15px!important;
+    border-radius: 15px!important;
+   -khtml-border-radius: 15px!important;
     -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
     -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
     box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444!important;
@@ -329,9 +330,10 @@ text-align:center;
     width: 100%;
     height:100%;
 }
-/*Category Page Titles*/
+/*Category Page Titles and descriptions*/
 .term-description h4,
-.term-description h3 {
+.term-description h3 ,
+.term-description h2 {
 text-align:center!important;
 padding:5px!important;
 }
@@ -424,10 +426,6 @@ color: #fff!important;
 .reset_variations {
 display: none !important;
 }
-/*AWS Search Box Global*/
-.aws-search-field {
-background:#fff!important;
-}
 /*Return to Shop button Browse Shop Mini Cart*/
 #return a.button.wc-forward {
 background:#fff!important;
@@ -440,29 +438,39 @@ border: none!important;
 color:#fff!important;
 }
 /*Cart - Checkout - Order - Cart Empty Page*/
+/*AWS Search Box Global*/
+.aws-search-field {
+background:rgba(77, 124, 137, 0.07)!important;
+}
 /*Search Box Sidebar Widget*/
   .widget_aws_widget .aws-container .aws-search-field {
-    border-color: #dedede #bababa #aaa #bababa;
-    border-style: solid;
-    border-width: 1px;
-   -webkit-border-radius: 5px!important;
-    -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-    -khtml-border-radius: 5px!important;
-    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+   border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
+    -webkit-border-radius: 4px!important;
+    -moz-border-radius: 4px!important;
+    border-radius: 4px!important;
+   -khtml-border-radius: px!important;  
     -webkit-transition: background .55s ease;
 -moz-transition: background .55s ease;
 -ms-transition: background .55s ease;
 -o-transition: background .55s ease;
 transition: background .55s ease;
     margin: auto;
-    margin-bottom:20px;
     overflow: hidden;
     width: 100%;
 }
+/*
 .widget_aws_widget .aws-container .aws-search-field::placeholder {
 font:inherit;
 font-size:1.5em!important;
@@ -478,28 +486,36 @@ color:#fff!important;
 }
 /*Search Box on Cart Page*/
 .woocommerce .shopsearch .aws-container .aws-search-field {
-    border-color: #dedede #bababa #aaa #bababa;
-    border-style: solid;
-    border-width: 1px;
-   -webkit-border-radius: 5px!important;
-    -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-    -khtml-border-radius: 5px!important;
-    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+   border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
+    -webkit-border-radius: 4px!important;
+    -moz-border-radius: 4px!important;
+    border-radius: 4px!important;
+   -khtml-border-radius: px!important;  
     -webkit-transition: background .55s ease;
 -moz-transition: background .55s ease;
 -ms-transition: background .55s ease;
 -o-transition: background .55s ease;
 transition: background .55s ease;
     margin: auto;
+    overflow: hidden;
+    width: 100%;
     margin-bottom:20px;
     overflow: hidden;
     padding: 8px;
     width: 100%;
-}
+}*/
 .woocommerce .shopsearch .aws-container .aws-search-field:hover,
 .woocommerce .shopsearch .aws-container .aws-search-field:focus,
 .woocommerce .shopsearch .aws-container .aws-search-field:active {
@@ -507,13 +523,13 @@ outline:none!important;
 background: #B0BEC5!important;
 color:#fff!important;
 }
-/*Search Box Text Placeholder Cart Page*/
+/*Search Box Text Placeholder Cart Page
 .woocommerce .shopsearch .aws-container .aws-search-field::placeholder {
 font:inherit;
 font-size:1.5em!important;
 font-weight:300;
 color:#000!important;
-}
+}*/
 .return-to-shop a.button.wc-forward {
 background: -moz-linear-gradient(
         top,
