@@ -30,6 +30,5 @@ global $woocommerce;
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="padder">
-				<div class="shopsearch">
-<?php echo do_shortcode("[aws_search_form]");?><!--AWS Search Plugin Shortcode-->
-</div>
+			   <?php echo do_shortcode("[aws_search_form]");?><!--AWS Search Plugin Shortcode-->
+

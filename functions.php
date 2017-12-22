@@ -24,7 +24,13 @@ function add_inline_script() {
   echo "<script></script>\n";
 }
 add_action( 'wp_head', 'add_inline_script', 0 );*/
-/*Change Page Titles*/
+/*Add Icomoon Search Icon To AWS Search Box
+    add_filter('aws_searchbox_markup', 'aws_searchbox_markup');
+    function aws_searchbox_markup( $markup ) {
+    $pattern = '/(<input\s*type=\"text\".*?\/>)/i';
+    $markup = preg_replace( $pattern, '${1}<i class="icon-search"></i>', $markup );
+    return $markup;
+    }*/
 
 /* Disable All WooCommerce  Styles and Scripts Except Shop Pages*/
 add_action( 'wp_enqueue_scripts', 'dequeue_woocommerce_styles_scripts', 99 );

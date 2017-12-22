@@ -23,27 +23,18 @@ background-color: #fff;
 /*Gallery*/
 .gallery {
 text-align:center!important;
-margin:auto;
-}
-.gallery h3,
-.gallery h4 {
-text-align:center!important;
-margin:auto;
+margin-top:20px!important;
 }
 .gallery img {
-    border:1px solid rgba(18,30,51, 0.1);
-    -moz-border-radius: 5px!important;
-    -webkit-border-radius: 5px!important;
-    -khtml-border-radius: 5px!important;
-    border-radius: 5px!important;
-    padding-top: 10px;
-    padding-bottom:10px;
-    width:80%!important;
-    height:80%!important;
-    margin: 0;
+margin-top:22px!important;
+width:100%!important;
+height:100%!important;
+}
+.site-header .branding .title {
+font-size: 60px;
 }
 .map {
-padding-top:10px; 
+margin-top:22px;
 width:100%;
 height:100%; 
 }
@@ -62,12 +53,11 @@ padding-bottom: 10px;
 }
 /*Cart Page*/
 #cart {
-padding-top:20px;
 padding-bottom:20px;
 padding-right:0px;
 padding-left:0px;
-margin:auto;
-text-align:justify;
+
+text-align:center;
 }
 #cart h4 a:hover{
 color:#808080;
@@ -157,17 +147,20 @@ background: -moz-linear-gradient(
 .wpcf7 input[type="text"]{ 
 margin-top:5px;
 width: 100%;
- border-color: #dedede #bababa #aaa #bababa;
-    border-style: solid;
-    border-width: 1px;
-   -webkit-border-radius: 5px!important;
-    -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-    -khtml-border-radius: 5px!important;
-    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+ background:rgba(255,255,255, 0.3)!important;
+border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
 -khtml-border-radius: 5px!important;
   -webkit-border-radius: 5px!important; 
   -moz-border-radius: 5px!important; 
@@ -176,17 +169,20 @@ width: 100%;
 .wpcf7 input[type="tel"]{ 
 margin-top:5px;
 width: 100%;
-border-color: #dedede #bababa #aaa #bababa;
-    border-style: solid;
-    border-width: 1px;
-   -webkit-border-radius: 5px!important;
-    -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-    -khtml-border-radius: 5px!important;
-    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+ background:rgba(255,255,255, 0.3)!important;
+border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
 -khtml-border-radius: 5px!important;
   -webkit-border-radius: 5px!important; 
   -moz-border-radius: 5px!important; 
@@ -195,47 +191,67 @@ border-color: #dedede #bababa #aaa #bababa;
 .wpcf7 input[type="email"]{ 
 margin-top:5px;
 width: 100%;
-border-color: #dedede #bababa #aaa #bababa;
-    border-style: solid;
-    border-width: 1px;
-   -webkit-border-radius: 5px!important;
-    -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-    -khtml-border-radius: 5px!important;
-    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+ background:rgba(255,255,255, 0.3)!important;
+border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
+-khtml-border-radius: 5px!important;
+  -webkit-border-radius: 5px!important; 
+  -moz-border-radius: 5px!important; 
+  border-radius: 5px!important; 
 }
 .textarea { 
 margin-top:5px;
 width: 100%;
-border-color: #dedede #bababa #aaa #bababa;
-    border-style: solid;
-    border-width: 1px;
-   -webkit-border-radius: 5px!important;
-    -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-    -khtml-border-radius: 5px!important;
-    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+ background:rgba(255,255,255, 0.3)!important;
+border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
+-khtml-border-radius: 5px!important;
+  -webkit-border-radius: 5px!important; 
+  -moz-border-radius: 5px!important; 
+  border-radius: 5px!important; 
 }
 .select { 
 padding: 5px;
-background-color: #fff;
-border-color: #dedede #bababa #aaa #bababa;
-    border-style: solid;
-    border-width: 1px;
-   -webkit-border-radius: 5px!important;
-    -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-    -khtml-border-radius: 5px!important;
-    -webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
-    -khtml-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+ background:rgba(255,255,255, 0.3)!important;
+border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
+-khtml-border-radius: 5px!important;
+  -webkit-border-radius: 5px!important; 
+  -moz-border-radius: 5px!important; 
+  border-radius: 5px!important; 
 }
 /*Footer*/
 .site-footer #copyright a:hover {
@@ -401,7 +417,7 @@ color: #fff!important;
         #ebebeb 50%,
         #dbdbdb 50%,
         #b5b5b5);
-    background: -webkit-gradient(
+background: -webkit-gradient(
         linear, left top, left bottom,
         from(#ffffff),
         color-stop(0.50, #ebebeb),
@@ -425,67 +441,10 @@ color: #fff!important;
     border-radius: 10px!important;
    -khtml-border-radius: 10px!important;
     color:#050505!important;   
-
 }
-/*Hide Clear Text on variation dropdown*/
-.reset_variations {
-display: none !important;
-}
-/*Return to Shop button Browse Shop Mini Cart*/
-#return a.button.wc-forward {
-background:#fff!important;
-border: solid 1px #000;
-color:#000;
-}
-#return a.button.wc-forward:hover {
-background:rgba(18,30,51, 0.6)!important;
-border: none!important;
-color:#fff!important;
-}
-/*AWS Search Box Global Base Style*/
-.aws-container .aws-search-form .aws-search-field {
-}
-.aws-container .aws-search-form .aws-search-field {
-background:rgba(255,255,255, 0.3)!important;
-margin-bottom:36px!important;
-border: 1px solid #949494;
-    -moz-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    -webkit-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    text-shadow:
-        0px -1px 0px rgba(000,000,000,0.2),
-        0px 1px 0px rgba(255,255,255,1);
-   -webkit-transition: background .55s ease;
--moz-transition: background .55s ease;
--ms-transition: background .55s ease;
--o-transition: background .55s ease;
-transition: background .55s ease;
-    overflow: hidden;
-    width: 100%;
-    overflow: hidden;
-    width: 100%;
-}
-/*AWS Search Box Fade and Border Radius*/
-.aws-container .aws-search-form .aws-search-field {
--webkit-border-radius: 5px!important;
-    -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-   -khtml-border-radius: 5px!important;  
-}
-.aws-container .aws-search-form .aws-search-field:hover,
-.aws-container .aws-search-form .aws-search-field:focus,
-.aws-container .aws-search-form .aws-search-field:active {
-outline:none!important;
-background: rgba(138, 172, 172, 0.2)!important;
-}
+/*Back To Shop Button*/
 .return-to-shop a.button.wc-forward {
-background: -moz-linear-gradient(
+ background: -moz-linear-gradient(
         top,
         #a3a3a3 0%,
         #3b3b3b 50%,
@@ -515,7 +474,6 @@ background: -moz-linear-gradient(
         0px -1px 0px rgba(000,000,000,1),
         0px 1px 0px rgba(255,255,255,0.2);
 color: #fff!important;
-    margin: auto;
   
   
 }
@@ -527,7 +485,7 @@ background: -moz-linear-gradient(
         #ebebeb 50%,
         #dbdbdb 50%,
         #b5b5b5);
-    background: -webkit-gradient(
+background: -webkit-gradient(
         linear, left top, left bottom,
         from(#ffffff),
         color-stop(0.50, #ebebeb),
@@ -552,6 +510,65 @@ background: -moz-linear-gradient(
    -khtml-border-radius: 10px!important;
     color:#050505!important;   
 }
+/*Return to Shop button Browse Shop Mini Cart*/
+#return a.button.wc-forward {
+background:#fff!important;
+border: solid 1px #000;
+color:#000;
+}
+#return a.button.wc-forward:hover {
+background:rgba(18,30,51, 0.6)!important;
+border: none!important;
+color:#fff!important;
+}
+/*Hide Clear Text on variation dropdown*/
+.reset_variations {
+display: none !important;
+}
+/*AWS Search Box Global Base Style*/
+.aws-container .aws-search-form .aws-search-field::placeholder {
+font:inherit;
+font-size:1.1em;
+color:rgba(6, 8, 8, 0.3);
+}
+.aws-container .aws-search-form .aws-search-field {
+background:rgba(255,255,255, 0.3)!important;
+border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
+   -webkit-transition: background .55s ease;
+-moz-transition: background .55s ease;
+-ms-transition: background .55s ease;
+-o-transition: background .55s ease;
+transition: background .55s ease;
+margin-bottom:36px!important;
+overflow: hidden;
+width: 100%;
+}
+/*AWS Search Box Fade and Border Radius*/
+.aws-container .aws-search-form .aws-search-field {
+-webkit-border-radius: 5px!important;
+-moz-border-radius: 5px!important;
+border-radius: 5px!important;
+-khtml-border-radius: 5px!important;  
+}
+.aws-container .aws-search-form .aws-search-field:hover,
+.aws-container .aws-search-form .aws-search-field:focus,
+.aws-container .aws-search-form .aws-search-field:active {
+outline:none!important;
+background: rgba(0,25,51,0.3)!important;
+}
+/*End AWS erch Box*/
 /*Hide Cart Notice On Checkout*/
 .woocommerce-checkout .woocommerce-message {display: none !important;}
 /*END of Cart - Checkout - Order - Cart Empty Page*/
