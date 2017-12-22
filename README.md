@@ -1,7 +1,11 @@
 # shopstar-child
+Used with Woocommerce 3.25 and "Shopstar" Woocommerce parent theme.
+
 Child Theme with restyled footer and extra nav in footer for Shopstar Woocommerce Shop Theme has good Mobile Accessibility.
 
 Removed footer widgets which dont display well on mobile from original theme.
+
+Added custom templates for dual cart/checkout and various improvements including custom header with AWS Woocommerce search bar throughout site at very top of pages with custom css for all pages.
 
 Added deregister standard Wordpress Widgets and extra Footer Menu + extra styling for Woocommerce Cart.
 
@@ -11,14 +15,14 @@ Sidebar widgets now default to bottom of page scroll items for mobile.
 
 Customised templates for cart/empty-cart and mini-cart in woocommerce/cart folder.
 
-Templates for rest in templates folder - move out in to woocommerce folder to use any of them.
+Templates for rest in templates folder - move out in to woocommerce folder to use any ofthe others.
 
 Extra Continue Shopping Buttons on cart/checkout page.
 
 Optional Empty Cart Button for cart template and related functions in functions.php
 
-Auto update on cart/checkout page (disable ajax in Woocommerce) and removed update cart button (Look in functions.php to add it back)
+Auto update on cart/checkout page (disable ajax in Woocommerce first) and removed update cart button (Look in functions.php to add it back)
 
-Functions for Removing Woocommerce styles, deregistering Wordpress Widgets and others.
+Functions for Removing Woocommerce styles on non woocommerce pages, deregistering Wordpress Widgets and others.
 
 Use with Shopstar Parent Theme.
