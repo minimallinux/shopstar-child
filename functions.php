@@ -8,6 +8,7 @@ function theme_enqueue_styles() {
         array('parent-style')
     );
 }
+
 /*function shopstar_child_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'shopstar_content_width', 660 );
 }

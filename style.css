@@ -58,9 +58,11 @@ background-color:#292c2f;
 font-size: 60px;
 }
 /*Widget Area*/
-.widget-area p,
-.widget-area a {
+.widget-area p {
 color:#000; 
+}
+.widget-area a {
+color:#404040; 
 }
 .widget-area a:hover {
 color:#808080; 
@@ -76,7 +78,8 @@ width:100%!important;
 height:100%!important;
 }
 .map {
-margin-top:22px;
+padding-top:30px;
+margin-top:30px;
 width:100%;
 height:100%; 
 }
@@ -101,8 +104,17 @@ padding-left:0px;
 
 text-align:center;
 }
-#cart h4 a:hover{
+#cart p {
+color:#000;
+}
+#cart a {
+color:#404040;
+}
+#cart a:hover{
 color:#808080;
+}
+#cart h4 {
+padding-bottom:12px; 
 }
 #cart h2,
 #cart h3, 
@@ -113,8 +125,18 @@ text-align: center;
 /*Contact Form and other pages*/
 #page h4,
 #page h3,
-#page h2 {
+#page h2,
+#page p {
 text-align: center;
+}
+#page p {
+color:#000;
+}
+#page a {
+color:#404040;
+}
+#page a:hover {
+color:#808080;
 }
 .wpcf7 input[type="submit"]{ 
 padding: 5px;
