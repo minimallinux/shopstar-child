@@ -51,10 +51,92 @@ background-color: #fff;
   font-weight: normal;
   font-style: normal;
 }
+/*Footer*/
+.footer-basic-centered{
+	background-color: #222;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: normal 18px sans-serif;
+    padding: 45px;
+	margin-top: 80px;
+}
+.footer-basic-centered h4 {
+	font-family: "KaushanScript-Regular";
+padding:none;
+margin:none;
+text-align:center;	
+}
+.footer-basic-centered .footer-company-logo{
+	color:  #f8f8f8;
+	padding:none;
+	margin:none;
+	font-size: 40px;
+	font-weight: 500;
+	margin: 0;
+}
 
+.footer-basic-centered .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-family: "Lato-Regular";
+	margin: 0;
+}
+.footer-basic-centered .footer-company-name a:hover {
+color:#ccc;
+}
+
+.footer-basic-centered .footer-links{
+	font-family: "Raleway-Regular";
+	font-weight: normal;
+	font-size:16px;
+	color:  #8f9296;
+	padding: 35px 0 23px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links a{
+	padding:0px 5px;
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+.footer-basic-centered .footer-links a:hover {
+	color:#ccc;
+	}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-basic-centered{
+		padding: 35px;
+	}
+
+	.footer-basic-centered .footer-company-logo{
+		font-size: 32px;
+	}
+
+	.footer-basic-centered .footer-company-name{
+		font-size: 12px;
+	}
+	.footer-basic-centered .footer-links p {
+	list-style: none;
+	}
+
+	.footer-basic-centered .footer-links{
+		font-size: 14px;
+		padding: 20px 0 20px;
+	}
+
+	.footer-basic-centered .footer-links a{
+		line-height: 1.8;
+	}
+}
 /*End Footer*/
 #masthead .top-bar {
-background-color:#292c2f;
+background-color:#222;
 }
 .site-header .branding .title {
 font-size: 60px;
