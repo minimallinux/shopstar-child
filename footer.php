@@ -14,19 +14,7 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-	<div class="widgets">
-        <div class="container">
-        	<div class="padder">
-        	  <?php if ( is_active_sidebar( 'footer' ) ) : ?>
-	            <ul>
-	                <?php dynamic_sidebar( 'footer' ); ?>
-	            </ul>
-	    		<?php endif; ?>
-	           <div class="clearboth"></div>
-			</div>
-        </div>
-    </div>
-	<div class="bottom-bar">
+<div class="bottom-bar">
 	<div class="container"> 
 		   <div class="row cols-sm-12">
 			<div id="navmenu">
