@@ -5,9 +5,9 @@ Originally for a small Chinese takeaway just using a mascot/logo type image for 
 
 Child Theme with restyled footer and extra nav in footer for Shopstar Woocommerce Shop Theme has good Mobile Accessibility.
 
-Removed footer widgets which dont display well on mobile from original theme along with page titles (using Shopstar library/template-parts)
+Removed footer widgets and div which dont display well on mobile from original theme.
 
-Added custom templates for dual cart/checkout and various improvements including custom header with AWS Woocommerce search bar throughout the site at very top of pages with custom css fade/transition and custom css for all other pages including gradient/hover Woocommerce buttons throughout.
+Added custom templates for dual cart/checkout and various improvements including  AWS Woocommerce search bar with custom css fade/transition and custom css for all other pages including gradient/hover Woocommerce buttons throughout.
 
 Added deregister standard Wordpress Widgets and extra Footer Menu + extra styling for Woocommerce Cart.
 

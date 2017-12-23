@@ -207,14 +207,14 @@ function shopstar_child_add_to_cart_redirect() {
  $checkout_url = $woocommerce->cart->get_checkout_url();
  return $checkout_url;
 }
-/*Check for empty-cart get param to clear the cart*/
+/*Check for empty-cart get param to clear the cart
 add_action('init', 'woocommerce_clear_cart_url');
 function woocommerce_clear_cart_url() {
     global $woocommerce;
     if( isset($_REQUEST['clear-cart']) ) {
         $woocommerce->cart->empty_cart();
     }
-}
+}*/
 /*Remove Choose Option Text on Variations Dropdaown*/
 add_filter( 'woocommerce_dropdown_variation_attribute_options_args', 'shopstar_child_remove_select_text');
 function shopstar_child_remove_select_text( $args ){ $args['show_option_none'] = '';
