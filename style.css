@@ -57,6 +57,14 @@ background-color:#292c2f;
 .site-header .branding .title {
 font-size: 60px;
 }
+/*Widget Area*/
+.widget-area p,
+.widget-area a {
+color:#000; 
+}
+.widget-area a:hover {
+color:#808080; 
+}
 /*Gallery*/
 .gallery {
 text-align:center!important;
@@ -288,10 +296,7 @@ border: 1px solid #949494;
   border-radius: 5px!important; 
 }
 /*Footer old
-.site-footer .widgets {
-background:rgba(38, 27, 27, 0.1)!important;	
 
-}
 .site-footer #copyright a:hover {
 text-decoration:none!important;
 border-bottom:none!important;
