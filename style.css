@@ -123,11 +123,11 @@ color:#908F8F;
 display:block;
 }
 .footer.two ul li a.fb {
-	background: url('./images/social2.png') no-repeat 0px 4px;  
+	background: url('./images/social1.png') no-repeat 0px 4px;  
     padding: 10px 0 12px 52px;
 }
 .footer.two ul li a.fb1 {
-	background: url('./images/social1.png') no-repeat 0px 4px;
+	background: url('./images/social2.png') no-repeat 0px 4px;
     padding: 10px 0 12px 52px;
 }
 .footer.two ul li a.fb2 {
@@ -190,19 +190,19 @@ display:block;
     border: none;
 }
 .footer.two ul li a.fb:hover {
-    background: url('./images/social3hover.png') no-repeat 0px 4px;
+    background: url('./images/social1hover.png') no-repeat 0px 4px;
 }
 .footer.two ul li a.fb1:hover {
     background: url('./images/social2hover.png') no-repeat 0px 4px;
 }
 .footer.two ul li a.fb2:hover {
-    background: url('./images/social4hover.png') no-repeat 0px 4px;
+    background: url('./images/social3hover.png') no-repeat 0px 4px;
 }
 .footer.two ul li a.fb3:hover {
-    background: url('./images/social5hover.png') no-repeat 0px 4px;
+    background: url('./images/social4hover.png') no-repeat 0px 4px;
 }
 .footer.two ul li a.fb4:hover {
-    background: url('./images/social1hover.png') no-repeat 0px 4px;
+    background: url('./images/social5hover.png') no-repeat 0px 4px;
 }
 .footer.two ul li a:hover,.copy-right ul li a:hover,.footer.three ul li a:hover{
 	color:#6C7A89;
@@ -434,7 +434,6 @@ color:#6C7A89;
 		padding: 50px 0;
 	}	
 }
-
 /*End Footer*/
 #masthead .top-bar {
 background-color:#222;

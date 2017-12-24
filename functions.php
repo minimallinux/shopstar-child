@@ -106,6 +106,9 @@ function shopstar_child_woocommerce_image_dimensions() {
 	update_option( 'shop_thumbnail_image_size', $thumbnail ); 	// Image gallery thumbs
 }
 add_action( 'after_switch_theme', 'shopstar_child_woocommerce_image_dimensions', 1 );
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'shopstar_child_blog_img_side', 600, 400, true );
+
 //Add Footer Mneu
 function register_menu() {
   register_nav_menu('footer',__( 'Footer' ));
@@ -139,6 +142,8 @@ add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_
 function woo_remove_category_products_count() {
 	return;
 }
+
+
 /*Auto Update cart and show Update Button
 add_action( 'wp_footer', 'cart_update_qty_script' );
 function cart_update_qty_script() {
