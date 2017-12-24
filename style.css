@@ -40,7 +40,7 @@ background-color: #fff;
   font-weight: normal;
   font-style: normal;
 }
-/*Footer*/
+/*Footer resets do NOT remove*/
 h1,h2,h3,h4,h5,h6{
 	margin:0;			   
 }	
@@ -54,6 +54,7 @@ ul{
 label{
 	margin:0;
 }
+/*End resets*/
 /*-- main --*/
 .main{
 	padding:110px 0;
@@ -462,8 +463,8 @@ width:100%!important;
 height:100%!important;
 }
 .map {
-padding-top:30px;
-margin-top:30px;
+padding-top:25px;
+margin-top:25px;
 width:100%;
 height:100%; 
 }
@@ -589,8 +590,6 @@ background: -moz-linear-gradient(
     border-radius: 10px!important;
    -khtml-border-radius: 10px!important;
     color:#050505!important;   
-
-
 }
 .wpcf7 input[type="text"]{ 
 margin-top:5px;
@@ -701,29 +700,6 @@ border: 1px solid #949494;
   -moz-border-radius: 5px!important; 
   border-radius: 5px!important; 
 }
-/*Footer old
-
-.site-footer #copyright a:hover {
-text-decoration:none!important;
-border-bottom:none!important;
-color: #808080!important;
-}
-#copyright a {color: #c0c0c0;}
-#copyright {
-padding-top:4px;
-float:right;
-font: inherit;
-color: #c0c0c0;
-font-size: 0.7rem;
-font-weight: 300;
-text-align:center;
-}
-#navmenu {font: inherit;padding-bottom:5px;font-size: 0.8rem;float:left;}
-#navmenu a {color:#c0c0c0;}
-#navmenu a:hover{color: #808080;text-decoration: none!important;}
-#navmenu {text-align:center;}
-#navmenu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none; }
-#navmenu li {display:inline;padding: 5px 10px 5px 10px;}*/
 /*Woocommerce Styles*/
 /********************SHOP PAGE LAYOUT ************************************/
 /*.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
@@ -826,6 +802,7 @@ display:none;
 .term-description h4,
 .term-description p  {
 text-align:center;
+padding:20px;
 }
 /********************END SHOP PAGE LAYOUT *************************************/
 /*Buttons*/
