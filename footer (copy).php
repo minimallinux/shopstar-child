@@ -23,6 +23,7 @@
       wp_nav_menu( array( 'theme_location' => 'footer' ) );
  } ?>
 </div>
+<?php wp_nav_menu( array('menu' => 'footer' )); ?>
 <div id="copyright">
 				<?php printf( __( 'Built by %1$s', 'shopstar_child' ), '<a href="'. esc_url( '#' ) .'">Webmobapps</a> © 2017 Red Diamond' ); ?>
 			</div>
