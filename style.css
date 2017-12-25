@@ -67,11 +67,11 @@ font-family: "Lato-Regular";
     padding: 3em 3em;
 }
 p.footer-gd {
-    color: #d3d3d3;
+    color: #A9A9A9;
     font-weight: 400;
 }
 p.footer-gd a {
-	color: #d3d3d3;
+	color: #A9A9A9;
 }
 .copy-right-grids .copy-left p {
 font-size: 13px;
@@ -186,7 +186,7 @@ display:block;
     padding: 0 12px;
 }
 .copy-right ul li a {
-    color: #d3d3d3;
+    color: #A9A9A9;
 	font-size:1em;
 }
 .copy-right ul li:nth-child(1) {
@@ -452,10 +452,7 @@ color:#000;
 color:#404040; 
 }
 .widget-area a:hover {
-color:#6C7A89; 
-}
-.widget-area .widget_a2a_share_save_widget a:hover {
-color:#6C7A89!important;
+color:#6C7A89!important; 
 }
 /*Gallery*/
 .gallery {
@@ -468,8 +465,8 @@ width:100%!important;
 height:100%!important;
 }
 .map {
-padding-top:25px;
-margin-top:25px;
+padding-top:22px;
+margin-top:22px;
 width:100%;
 height:100%; 
 }
@@ -487,7 +484,7 @@ h2 {
 padding-bottom: 10px;
 }
 .woocommerce {
-font-family: "Lato-Regular"
+font-family: "Lato-Regular";
 }
 /*Cart Page*/
 #cart {
@@ -495,15 +492,6 @@ padding-bottom:20px;
 padding-right:0px;
 padding-left:0px;
 text-align:center;
-}
-#cart p {
-color:#000;
-}
-#cart a {
-color:#404040;
-}
-#cart p a:hover {
-color::#6C7A89!important; 
 }
 #cart h4 {
 padding-bottom:12px; 
@@ -520,15 +508,6 @@ text-align: center;
 #page h2,
 #page p {
 text-align: center;
-}
-#page p {
-color:#000;
-}
-#page a {
-color:#404040;
-}
-#page a:hover {
-color::#6C7A89; 
 }
 .wpcf7 input[type="submit"]{ 
 padding: 5px;
@@ -721,10 +700,10 @@ border: 1px solid #949494;
     font-size: 1em!important;
  }
 .woocommerce-breadcrumb a {
-     color:#000 !important;
+     color:#000!important;
 }
 .woocommerce-breadcrumb a:hover {
-     color:#808080!important;
+     color:#6C7A89!!important;
 }
 /*Hide Variation Price*/
 .woocommerce-variation-price {display:none!important;}

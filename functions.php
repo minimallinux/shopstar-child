@@ -13,7 +13,7 @@ function theme_enqueue_styles() {
 	$GLOBALS['content_width'] = apply_filters( 'shopstar_content_width', 660 );
 }
 add_action( 'after_setup_theme', 'shopstar_child_content_width', 0 );*/
-define('WOOCOMMERCE_USE_CSS', false);
+
 define( 'WC_MAX_LINKED_VARIATIONS', 99 );
 /*Proceeed To checkout at Top
 add_action( 'woocommerce_before_cart', 'move_proceed_button' );
