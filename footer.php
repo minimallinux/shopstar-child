@@ -16,8 +16,8 @@
 				<div class="footer one">
 					<h3>Red Diamond Chinese Restaurant</h3>
 					<p> Established in 2004, Red Diamond has gained a large following and a reputation for providing finest quality Chinese, English &amp; Thai dishes for discerning customers in the area. We provide both an in-house cafe with Breakfast and Lunch served Monday to Friday, and a rapid delivery &amp; takeaway service.</p>
-					<p>Check out <a href="http://red-diamond-chinese.co.uk">red-diamond-chinese.co.uk</a> for more info.</p>
-					<p class="adam">- Jane Wang, CEO</p>
+					<br />
+				    <?php echo do_shortcode("[aws_search_form]");?>
 					<div class="clear"></div>
 				</div>
 				<div class="footer two">
