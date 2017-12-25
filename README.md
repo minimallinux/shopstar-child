@@ -23,6 +23,5 @@ Optional Empty Cart Button for cart template and related functions in functions.
 
 Auto update on cart/checkout page (disable ajax in Woocommerce first) and removed update cart button (Look in functions.php to add it back)
 
-Functions for Removing Woocommerce styles on non woocommerce pages, deregistering Wordpress Widgets and others.
-
+Functions for Removing Woocommerce styles on non woocommerce pages, deregistering Wordpress Widgets, showing store closed (Using Business Hours plugin) and others.
 Use with Shopstar Parent Theme.
