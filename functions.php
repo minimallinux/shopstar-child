@@ -79,6 +79,8 @@ add_filter( 'woocommerce_continue_shopping_redirect', 'my_woocommerce_continue_s
 /*
  * Define image sizes
  */
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'shopstar_child_blog_img_side', 600, 400, true );
 function shopstar_child_woocommerce_image_dimensions() {
 	global $pagenow;
  
@@ -106,9 +108,6 @@ function shopstar_child_woocommerce_image_dimensions() {
 	update_option( 'shop_thumbnail_image_size', $thumbnail ); 	// Image gallery thumbs
 }
 add_action( 'after_switch_theme', 'shopstar_child_woocommerce_image_dimensions', 1 );
-add_theme_support( 'post-thumbnails' );
-add_image_size( 'shopstar_child_blog_img_side', 600, 400, true );
-
 //Add Footer Mneu
 function register_menu() {
   register_nav_menu('footer',__( 'Footer' ));
