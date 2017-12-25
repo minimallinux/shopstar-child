@@ -67,8 +67,11 @@ font-family: "Lato-Regular";
     padding: 3em 3em;
 }
 p.footer-gd {
-    color: #908F8F;
+    color: #d3d3d3;
     font-weight: 400;
+}
+p.footer-gd a {
+	color: #d3d3d3;
 }
 .copy-right-grids .copy-left p {
 font-size: 13px;
@@ -100,7 +103,7 @@ p.adam{
     width: 23%;
 }
 .footer.one p{
-	color:#908F8F;
+	color:#A9A9A9;
 	line-height:2em;
 	font-size:14px;
 }
@@ -119,7 +122,7 @@ p.adam{
 	font-size:14px;
 }
 .footer.two ul li a{
-color:#908F8F;	
+color:#A9A9A9;	
 display:block;
 }
 .footer.two ul li a.fb {
@@ -145,7 +148,7 @@ display:block;
 .footer.three ul li {
     list-style-type: none;
     display: block;
-    color: #908F8F;
+    color: #A9A9A9;
     font-size: 14px;
     line-height: 2.5em;
 }
@@ -164,7 +167,7 @@ display:block;
     background: url('./images/icon1.png') no-repeat 0px 6px;
     padding-left: 38px;
     display: block;
-	color:#908F8F;
+	color:#A9A9A9;
 }
 .copy-right-grids {
 	padding: 20px 20px;
@@ -183,7 +186,7 @@ display:block;
     padding: 0 12px;
 }
 .copy-right ul li a {
-    color: #908F8F;
+    color: #d3d3d3;
 	font-size:1em;
 }
 .copy-right ul li:nth-child(1) {
@@ -439,7 +442,7 @@ color:#6C7A89;
 background-color:#222;
 }
 .site-header .branding .title {
-font-size: 60px;
+font-size: 65px;
 }
 /*Widget Area*/
 .widget-area p {
@@ -449,7 +452,10 @@ color:#000;
 color:#404040; 
 }
 .widget-area a:hover {
-color:#808080; 
+color:#6C7A89; 
+}
+.widget-area .widget_a2a_share_save_widget a:hover {
+color:#6C7A89!important;
 }
 /*Gallery*/
 .gallery {
@@ -480,6 +486,9 @@ text-align:center;
 h2 {
 padding-bottom: 10px;
 }
+.woocommerce {
+font-family: "Lato-Regular"
+}
 /*Cart Page*/
 #cart {
 padding-bottom:20px;
@@ -493,8 +502,8 @@ color:#000;
 #cart a {
 color:#404040;
 }
-#cart a:hover{
-color:#808080;
+#cart p a:hover {
+color::#6C7A89!important; 
 }
 #cart h4 {
 padding-bottom:12px; 
@@ -519,7 +528,7 @@ color:#000;
 color:#404040;
 }
 #page a:hover {
-color:#808080;
+color::#6C7A89; 
 }
 .wpcf7 input[type="submit"]{ 
 padding: 5px;
@@ -971,8 +980,10 @@ display: none !important;
 }
 /*Footer search box*/
 .footer.one .aws-container {
-max-width:98%;
-padding-right:10px; 
+max-width:96%;
+}
+.footer.one .aws-container .aws-search-form .aws-search-field {
+
 }
 /*AWS Search Box Global Base Style*/
 .aws-container .aws-search-form .aws-search-field::placeholder {

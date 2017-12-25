@@ -17,8 +17,6 @@ Sidebar widgets now default to bottom of page scroll items for mobile.
 
 Customised templates for cart/empty-cart and mini-cart in woocommerce/cart folder.
 
-Templates for rest in templates folder - move out in to woocommerce folder to use any ofthe others.
-
 Extra Continue Shopping Buttons on cart/checkout page.
 
 Optional Empty Cart Button for cart template and related functions in functions.php
