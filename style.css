@@ -932,10 +932,9 @@ display: none !important;
 }
 /*Footer search box*/
 .footer.one .aws-container {
-max-width:96%;
+max-width:98%;
 padding-right:10px;	
 }
-
 /*AWS Search Box Global Base Style*/
 .aws-container .aws-search-form .aws-search-field::placeholder {
 font:inherit;
