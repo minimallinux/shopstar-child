@@ -27,13 +27,13 @@
 						<li><a class="fb" href="#"><i></i>Follow us on Twitter</a></li>
 						<li><a class="fb2" href="#"><i></i>Follow us on Pinterest</a></li>
 					    <li><a class="fb4" href="#"><i></i>Add us on Googleplus</a></l>
-					     <li><a class="fb3" href="#"><i></i>Get Updates and Promotions</a></li>	
+					    <li><a class="fb3" href="#"><i></i>Get Updates and Promotions</a></li>	
 					</ul>
 				</div>
 				<div class="footer three">
 					<h3>Contact Us</h3>
 					<ul>
-						<li>Red Diamond Chinese <span>103 Carr House Road, Hyde Park</span>Doncaster DN1 2BD  </li>
+						<li>Red Diamond Chinese <span>103 Carr House Road, Hyde Park</span>Doncaster DN1 2BD</li>
 					    <li>+44 1302 368585 </li>
 						<li><a href="mailto:esales@red-diamond-chinese.co.uk">esales@red-diamond-chinese.co.uk</a> </li>
 					</ul>
