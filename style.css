@@ -82,7 +82,12 @@ p.footer-gd a:hover {
 .footer{
 	float:left;
 }
-
+p.adam{
+    float:right;
+    color:#6F6E6E !important;
+    font-size:13px !important;
+    margin-top:20px;
+}
 .footer h3{
     font-size: 18px;
     color: #fff;

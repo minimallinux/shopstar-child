@@ -37,7 +37,7 @@
 					    <li>+44 1302 368585 </li>
 						<li><a href="mailto:esales@red-diamond-chinese.co.uk">esales@red-diamond-chinese.co.uk</a> </li>
 					</ul>
-				</div>
+                   </div>
 				<div class="clear"></div>
 			</div>
 			<div class="copy-right-grids">

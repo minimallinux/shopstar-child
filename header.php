@@ -31,4 +31,4 @@ global $woocommerce;
 		<div class="container">
 			<div class="padder">
 			   <?php echo do_shortcode("[aws_search_form]");?><!--AWS Search Plugin Shortcode-->
-
+			
