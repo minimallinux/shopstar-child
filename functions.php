@@ -119,6 +119,9 @@ function shopstar_child_woocommerce_image_dimensions() {
 	update_option( 'shop_thumbnail_image_size', $thumbnail ); 	// Image gallery thumbs
 }
 add_action( 'after_switch_theme', 'shopstar_child_woocommerce_image_dimensions', 1 );
+add_theme_support( 'post-thumbnails' ); 
+set_post_thumbnail_size( "600", "400", $crop ); 
+
 //Add Footer Mneu
 function register_menu() {
   register_nav_menu('footer',__( 'Footer' ));
@@ -238,12 +241,10 @@ return $args; }
 // Main Price Setting changed to "From" and remove higher price
 function shopstar_child_variable_price_format( $price, $product ) {
     $prefix = sprintf('%s: ', __('From', 'shopstar_child'));
- 
     $min_price_regular = $product->get_variation_regular_price( 'min', true );
     $min_price_sale    = $product->get_variation_sale_price( 'min', true );
     $max_price = $product->get_variation_price( 'max', true );
     $min_price = $product->get_variation_price( 'min', true );
- 
     $price = ( $min_price_sale == $min_price_regular ) ?
         wc_price( $min_price_regular ) :
         '<del>' . wc_price( $min_price_regular ) . '</del>' . '<ins>' . wc_price( $min_price_sale ) . '</ins>';

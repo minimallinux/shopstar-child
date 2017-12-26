@@ -36,7 +36,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 <h4>Welcome To Our Rapid Checkout!.</h4>
 <p>If you do not receive an email within 15 minutes after placing your order or have any queries, please call us on  <a href="tel:+441302368585">01302 368585</a> or <a href="tel:+447868744127">07868 744127</a> 
 or use our <a href="http://vhost2.com/?page_id=422&v=79cba1185463">contact form.</a></p>
-<p>The items below are currently in your basket. To remove any item click the red "X". You can also just type a short term in the search box above to find individual items. To place an order, please click "Place Order" at the bottom of page.</p><p> Please note that delivery method is ignored if you are ordering Gift Certificates or Electronically distributed products.</p>
+<br />
+<p>The items below are currently in your basket. To remove any item click the red "X". You can also just type a short term in the search box above to find individual items. To place an order, please click "Place Order" at the bottom of page.</p>
+<br />
+<p> Please note that delivery method is ignored if you are ordering Gift Certificates or Electronically distributed products.</p>
 </div>
  <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
