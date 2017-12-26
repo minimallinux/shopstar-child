@@ -478,6 +478,13 @@ padding-bottom: 10px;
 .woocommerce {
 font-family: "Lato-Regular";
 }
+
+.woocommerce tr td a:hover,
+.woocommerce ul li a:hover,
+.woocommerce p a:hover,
+.woocommerce a:hover {
+ color:#6C7A89!important;    
+}
 /*Cart Page*/
 #cart {
 padding-bottom:20px;
@@ -494,12 +501,19 @@ padding-bottom:12px;
 #cart p {
 text-align: center;
 }
+#cart p a:hover {
+color:#6C7A89;  
+}
 /*Contact Form and other pages*/
 #page h4,
 #page h3,
 #page h2,
 #page p {
 text-align: center;
+}
+#page h4 a:hover,
+#page p a:hover {
+color:#6C7A89;  
 }
 .wpcf7 input[type="submit"]{ 
 padding: 5px;
