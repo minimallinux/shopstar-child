@@ -437,6 +437,10 @@ color:#6C7A89;
 	}	
 }
 /*End Footer*/
+table tr.mbhi-is-current td{
+   font-weight:bold;
+   background-color:rgba(63, 127, 191,0.3);
+}
 #masthead .top-bar {
 background-color:#222;
 }
