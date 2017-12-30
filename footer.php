@@ -12,6 +12,8 @@
 		</div>
 	</div>
 </div><!-- #content -->
+
+
 			<div class="footer-grids">
 				<div class="footer one">
 					<h3>Red Diamond Chinese Restaurant</h3>
@@ -49,6 +51,8 @@
 				</div>
 				<div class="clear"></div>
 			</div>
+		
+		
 			<?php wp_footer(); ?>
 </body>
 </html>

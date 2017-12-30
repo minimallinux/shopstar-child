@@ -121,7 +121,6 @@ function shopstar_child_woocommerce_image_dimensions() {
 add_action( 'after_switch_theme', 'shopstar_child_woocommerce_image_dimensions', 1 );
 add_theme_support( 'post-thumbnails' ); 
 set_post_thumbnail_size( "600", "400", $crop ); 
-
 //Add Footer Mneu
 function register_menu() {
   register_nav_menu('footer',__( 'Footer' ));
