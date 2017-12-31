@@ -705,51 +705,59 @@ margin-right:5px;
 /*.woocommerce-Price-amount {display:none !important;}*/
 /*Image Borders*/
 .related.products .woocommerce-LoopProduct-link img {
-  border: 10px solid rgba(0,31,63,0.3)!important;
+  background: #fff!important;
+  border: 12px solid transparent!important;
+  border-image: url("./images/border.jpg") 100 round!important;
   padding: 10px!important;
-  -webkit-border-radius: 10px!important;
-   -moz-border-radius: 10px!important;
-    border-radius: 10px!important;
-   -khtml-border-radius: 10px!important;
+ -webkit-border-radius: 5px!important;
+   -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+   -khtml-border-radius: 5px!important;
    margin: auto;
     width: 100%;
     height:100%;
 
 }
 .woocommerce-LoopProduct-link img {
-   border: 10px solid rgba(0,31,63,0.3)!important;
+  background: #fff!important;
+  border: 12px solid transparent!important;
+  border-image: url("./images/border.jpg") 100 round!important;
   padding: 10px!important;
-  -webkit-border-radius: 10px!important;
-   -moz-border-radius: 10px!important;
-    border-radius: 10px!important;
-   -khtml-border-radius: 10px!important;
+ -webkit-border-radius: 5px!important;
+   -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+   -khtml-border-radius: 5px!important;
    margin: auto;
     width: 100%;
     height:100%;
 
 }
 .product-category img {
-  border: 10px solid rgba(0,31,63,0.3)!important;
+  background: #fff!important;
+  border: 12px solid transparent!important;
+  border-image: url("./images/border.jpg") 100 round!important;
   padding: 10px!important;
-  -webkit-border-radius: 10px!important;
-   -moz-border-radius: 10px!important;
-    border-radius: 10px!important;
-   -khtml-border-radius: 10px!important;
+ -webkit-border-radius: 5px!important;
+   -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+   -khtml-border-radius: 5px!important;
    margin: auto;
     width: 100%;
     height:100%;
 
 }
 body.single.single-product img.attachment-shop_single.size-shop_single.wp-post-image {
-  border: 10px solid rgba(0,31,63,0.3)!important;
+    background: #fff!important;
+  border: 12px solid transparent!important;
+  border-image: url("./images/border.jpg") 100 round!important;
   padding: 10px!important;
-  -webkit-border-radius: 10px!important;
-  -moz-border-radius: 10px!important;
-  border-radius: 10px!important;
-   -khtml-border-radius: 10px!important;
-  margin: auto;
-  width: 100%;
-  height:100%;
+ -webkit-border-radius: 5px!important;
+   -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+   -khtml-border-radius: 5px!important;
+   margin: auto;
+    width: 100%;
+    height:100%;
 }
 /*.woocommerce-product-gallery img {
   border: 10px solid rgba(0,31,63,0.3)!important;
