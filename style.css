@@ -545,7 +545,7 @@ background: -moz-linear-gradient(
         #ebebeb 50%,
         #dbdbdb 50%,
         #b5b5b5);
-    background: -webkit-gradient(
+background: -webkit-gradient(
         linear, left top, left bottom,
         from(#ffffff),
         color-stop(0.50, #ebebeb),
@@ -572,65 +572,10 @@ background: -moz-linear-gradient(
 }
 .wpcf7 input[type="text"]{ 
 margin-top:5px;
-width: 100%;background:rgba(255,255,255, 0.3)!important;
-border: 1px solid #949494;
-    -moz-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    -webkit-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    text-shadow:
-        0px -1px 0px rgba(000,000,000,0.2),
-        0px 1px 0px rgba(255,255,255,1);
--khtml-border-radius: 5px!important;
-  -webkit-border-radius: 5px!important; 
-  -moz-border-radius: 5px!important; 
-  border-radius: 5px!important; 
-}
-.wpcf7 input[type="tel"]{ 
-margin-top:5px;
 width: 100%;
- background:rgba(255,255,255, 0.3)!important;
+background:rgba(255,255,255, 0.3)!important;
 border: 1px solid #949494;
-    -moz-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    -webkit-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    text-shadow:
-        0px -1px 0px rgba(000,000,000,0.2),
-        0px 1px 0px rgba(255,255,255,1);
--khtml-border-radius: 5px!important;
-  -webkit-border-radius: 5px!important; 
-  -moz-border-radius: 5px!important; 
-  border-radius: 5px!important; 
-}
-.wpcf7 input[type="email"]{ 
-margin-top:5px;
-width: 100%;
- background:rgba(255,255,255, 0.3)!important;
-border: 1px solid #949494;
-    -moz-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    -webkit-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    text-shadow:
-        0px -1px 0px rgba(000,000,000,0.2),
-        0px 1px 0px rgba(255,255,255,1);
--khtml-border-radius: 5px!important;
+ -khtml-border-radius: 5px!important;
   -webkit-border-radius: 5px!important; 
   -moz-border-radius: 5px!important; 
   border-radius: 5px!important; 
@@ -640,18 +585,6 @@ margin-top:5px;
 width: 100%;
  background:rgba(255,255,255, 0.3)!important;
 border: 1px solid #949494;
-    -moz-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    -webkit-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    text-shadow:
-        0px -1px 0px rgba(000,000,000,0.2),
-        0px 1px 0px rgba(255,255,255,1);
 -khtml-border-radius: 5px!important;
   -webkit-border-radius: 5px!important; 
   -moz-border-radius: 5px!important; 
@@ -663,18 +596,6 @@ float:left;
 padding: 5px;
  background:rgba(255,255,255, 0.3)!important;
 border: 1px solid #949494;
-    -moz-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    -webkit-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 2px rgba(255,255,255,1);
-    text-shadow:
-        0px -1px 0px rgba(000,000,000,0.2),
-        0px 1px 0px rgba(255,255,255,1);
 -khtml-border-radius: 5px!important;
   -webkit-border-radius: 5px!important; 
   -moz-border-radius: 5px!important; 
