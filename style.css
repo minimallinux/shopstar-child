@@ -704,60 +704,57 @@ margin-right:5px;
 }
 /*.woocommerce-Price-amount {display:none !important;}*/
 /*Image Borders*/
+
 .related.products .woocommerce-LoopProduct-link img {
-  background: #fff!important;
-  border: 12px solid transparent!important;
-  border-image: url("./images/border.jpg") 100 round!important;
-  padding: 10px!important;
- -webkit-border-radius: 5px!important;
-   -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-   -khtml-border-radius: 5px!important;
-   margin: auto;
+   background: #fff!important;	
+  border-radius: 10px 10px 10px 10px!important;
+-moz-border-radius: 10px 10px 10px 10px!important;
+-webkit-border-radius: 10px 10px 10px 10px!important;
+-khtml-border-radius:10px 10px 10px 10px!important;
+ border: 10px ridge rgba(54,72,102,0.7)!important;
+  margin: auto;
     width: 100%;
     height:100%;
-
+  padding: 10px!important;
 }
 .woocommerce-LoopProduct-link img {
-  background: #fff!important;
-  border: 12px solid transparent!important;
-  border-image: url("./images/border.jpg") 100 round!important;
-  padding: 10px!important;
- -webkit-border-radius: 5px!important;
-   -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-   -khtml-border-radius: 5px!important;
-   margin: auto;
+  background: #fff!important;	
+  border-radius: 10px 10px 10px 10px!important;
+-moz-border-radius: 10px 10px 10px 10px!important;
+-webkit-border-radius: 10px 10px 10px 10px!important;
+-khtml-border-radius:10px 10px 10px 10px!important;
+ border: 10px ridge rgba(54,72,102,0.7)!important;
+  margin: auto;
     width: 100%;
     height:100%;
+  padding: 10px!important;
 
 }
 .product-category img {
-  background: #fff!important;
-  border: 12px solid transparent!important;
-  border-image: url("./images/border.jpg") 100 round!important;
-  padding: 10px!important;
- -webkit-border-radius: 5px!important;
-   -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-   -khtml-border-radius: 5px!important;
-   margin: auto;
+ background: #fff!important;	
+  border-radius: 10px 10px 10px 10px!important;
+-moz-border-radius: 10px 10px 10px 10px!important;
+-webkit-border-radius: 10px 10px 10px 10px!important;
+-khtml-border-radius:10px 10px 10px 10px!important;
+ border: 10px ridge rgba(54,72,102,0.7)!important;
+  margin: auto;
     width: 100%;
     height:100%;
+  padding: 10px!important;
+
 
 }
 body.single.single-product img.attachment-shop_single.size-shop_single.wp-post-image {
-    background: #fff!important;
-  border: 12px solid transparent!important;
-  border-image: url("./images/border.jpg") 100 round!important;
-  padding: 10px!important;
- -webkit-border-radius: 5px!important;
-   -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-   -khtml-border-radius: 5px!important;
-   margin: auto;
+     background: #fff!important;	
+  border-radius: 10px 10px 10px 10px!important;
+-moz-border-radius: 10px 10px 10px 10px!important;
+-webkit-border-radius: 10px 10px 10px 10px!important;
+-khtml-border-radius:10px 10px 10px 10px!important;
+ border: 10px ridge rgba(54,72,102,0.7)!important;
+  margin: auto;
     width: 100%;
     height:100%;
+  padding: 10px!important;
 }
 /*.woocommerce-product-gallery img {
   border: 10px solid rgba(0,31,63,0.3)!important;
@@ -788,6 +785,8 @@ padding-bottom:15px;
 }
 /********************END SHOP PAGE LAYOUT *************************************/
 /*Buttons*/
+a.button.wc-forward,
+.gallery a.button.wc-forward, 
 .woocommerce a.button,
 .woocommerce button.button, 
 .woocommerce input.button, 
@@ -829,11 +828,13 @@ padding-bottom:15px;
         0px 1px 0px rgba(255,255,255,0.2);
 color: #fff!important;
 }
+a.button.wc-forward:hover,
+.gallery a.button.wc-forward:hover,
 .woocommerce a.button:hover,
 .woocommerce button.button:hover, 
 .woocommerce input.button:hover, 
 .woocommerce #respond input#submit:hover, 
-.woocommerce #content input.button,:hover 
+.woocommerce #content input.button:hover, 
 .woocommerce-page a.button:hover, 
 .woocommerce-page button.button:hover, 
 .woocommerce-page input.button:hover, 
