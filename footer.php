@@ -44,7 +44,7 @@
 			</div>
 			<div class="copy-right-grids">
 				<div class="copy-left">
-						<p class="footer-gd"><?php printf( __( 'Built by %1$s', 'shopstar_child' ), '<a href="'. esc_url( '#' ) .'">Webmobapps</a> © 2017 Red Diamond' ); ?></p>
+						<p class="footer-gd"><?php printf( __( 'Built by %1$s', 'shopstar_child' ), '<a href="'. esc_url( '#' ) .'">Webmobapps</a> © 2018 Red Diamond' ); ?></p>
 				</div>
 				<div class="copy-right">
 					<?php wp_nav_menu( array('menu' => 'footer' )); ?>

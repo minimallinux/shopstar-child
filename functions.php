@@ -8,7 +8,7 @@ function theme_enqueue_styles() {
         array('parent-style')
     );
 }
-/*Store closed functions(bbloomer)*/
+/*Store closed functions(bbloomer)
 /*Trigger holiday mode
  add_action ('init', 'bbloomer_woocommerce_holiday_mode');
 function bbloomer_woocommerce_holiday_mode() {
@@ -23,7 +23,7 @@ function bbloomer_woocommerce_holiday_mode() {
 /* Show Holiday Notice
 function bbloomer_wc_shop_disabled() {
         wc_print_notice( 'Our Online Shop is Closed Today :)', 'error');
-}
+}*/
 /*Set Maximum Variations*/
 define( 'WC_MAX_LINKED_VARIATIONS', 99 );
 /*Proceeed To checkout at Top
@@ -47,7 +47,11 @@ add_action( 'wp_head', 'add_inline_script', 0 );*/
     $markup = preg_replace( $pattern, '${1}<i class="icon-search"></i>', $markup );
     return $markup;
     }*/
-
+/*Remove Breadcrumbs*/
+add_action( 'init', 'jk_remove_wc_breadcrumbs' );
+function jk_remove_wc_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}
 /* Disable All WooCommerce  Styles and Scripts Except Shop Pages*/
 add_action( 'wp_enqueue_scripts', 'dequeue_woocommerce_styles_scripts', 99 );
 function dequeue_woocommerce_styles_scripts() {
