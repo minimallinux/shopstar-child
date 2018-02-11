@@ -12,9 +12,7 @@
 		</div>
 	</div>
 </div><!-- #content -->
-
-
-			<div class="footer-grids">
+       <div class="footer-grids">
 				<div class="footer one">
 					<h3>Red Diamond Chinese Restaurant</h3>
 					<p> Established in 2004, Red Diamond has gained a large following and a reputation for providing finest quality Chinese, English &amp; Thai dishes for discerning customers in the area. We provide both an in-house cafe with Breakfast and Lunch served Monday to Friday, and a rapid delivery &amp; takeaway service.</p>
@@ -42,9 +40,10 @@
                    </div>
 				<div class="clear"></div>
 			</div>
-			<div class="copy-right-grids">
-				<div class="copy-left">
-						<p class="footer-gd"><?php printf( __( 'Built by %1$s', 'shopstar_child' ), '<a href="'. esc_url( '#' ) .'">Webmobapps</a> © 2018 Red Diamond' ); ?></p>
+              <div class="copy-right-grids">
+              	<hr>
+                 <div class="copy-left">
+						<p class="footer-gd"><?php printf( __( 'Built by %1$s', 'shopstar_child' ), '<a href="'. esc_url( '#' ) .'">Webmobapps</a> © 2018 All Rights Reserved' ); ?></p>
 				</div>
 				<div class="copy-right">
 					<?php wp_nav_menu( array('menu' => 'footer' )); ?>
